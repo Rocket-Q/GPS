@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>手机传感器数据</title>
+    <title>位置和姿态数据显示</title>
     <script>
         // 当页面加载完成后初始化传感器
         window.addEventListener('DOMContentLoaded', () => {
@@ -106,22 +106,20 @@
 </head>
 <body>
     <!-- 页面标题 -->
-    <h1 align="center">手机传感器数据</h1>
+    <h1 align="center">位置和姿态数据显示</h1>
     
-    <!-- 传感器数据展示区域 -->
-    <table border="1" cellpadding="10" width="100%">
-        <tr>
-            <th width="33%">位置与高度</th>
-            <th width="33%">方向与罗盘</th>
-            <th width="33%">加速度与运动</th>
-        </tr>
-        <tr>
-            <td><pre id="position">正在获取位置数据...</pre></td>
-            <td><pre id="orientation">正在获取方向数据...</pre></td>
-            <td><pre id="motion">正在获取运动数据...</pre></td>
-        </tr>
-    </table>
-    
+
+
+        <!-- 传感器数据展示区域 -->
+        <div style="margin: 20px; padding: 10px; border-top: 1px solid #ccc;">
+            <h2>位置与高度:</h2>
+            <ul> <pre id="position">正在获取位置数据...</pre> </ul>
+            <h2>方向与罗盘:</h2>
+            <ul> <pre id="orientation">正在获取方向数据...</pre></ul>
+            <h2>加速度与运动:</h2>
+            <ul> <pre id="motion">正在获取运动数据...</pre></ul>
+        </div>
+
     <!-- 使用说明 -->
     <div style="margin: 20px; padding: 10px; border-top: 1px solid #ccc;">
         <h3>使用说明:</h3>
@@ -135,7 +133,7 @@
     
     <!-- 页脚信息 -->
     <div align="center" style="margin-top: 20px; color: #666;">
-        <small>传感器数据展示 &copy; 2023</small>
+        <small> Mr.Q &copy; 2025</small>
     </div>
 </body>
 </html>
